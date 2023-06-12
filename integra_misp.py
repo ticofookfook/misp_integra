@@ -56,7 +56,7 @@ if __name__ == '__main__':
     
     
     regex_ip = re.compile("\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}")
-    #Pepando registros de logs do ossec OBS: o regex foi feito para esta ISO! 
+    #Pegando registros de logs do ossec OBS: o regex foi feito para esta ISO! 
     logfile = open("/var/ossec/logs/archives/archives.log", "r", encoding="ISO-8859-1")
     loglines = follow(logfile)
     for line in loglines:
